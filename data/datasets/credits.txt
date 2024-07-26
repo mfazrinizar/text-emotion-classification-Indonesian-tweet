@@ -1,0 +1,1 @@
+The datasets are collected from Ricco48 public repository: https://github.com/Ricco48/Emotion-Dataset-from-Indonesian-Public-Opinion/
