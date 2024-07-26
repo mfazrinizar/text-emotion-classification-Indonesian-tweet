@@ -1,6 +1,28 @@
 # Text Emotion Classification in Indonesian Public Opinion Tweet
 
-Four traditional machine learning classifiers were evaluated for their performance in classifying emotions in Indonesian public opinion tweets. Below are the results of each classifier, including their accuracy, F1 score, and confusion matrix. The product in in form of prediction model is saved into /models.
+Four traditional machine learning classifiers were evaluated for their performance in classifying emotions in Indonesian public opinion tweets. Below are the results of each classifier, including their accuracy, F1 score, and confusion matrix. The product in form of prediction model is saved into /models.
+
+## Datasets
+
+The datasets are gathered from [Ricco48](https://github.com/Ricco48/Emotion-Dataset-from-Indonesian-Public-Opinion) public repository. I combined and splitted the AngerData.csv, FearData.csv, JoyData.csv, LoveData.csv, NeutralData.csv and SadData.csv into a composition of 70% Training Data (data_train.csv) and 30% Testing Data (data_test.csv). Below are some visualization of the datasets.
+- Size of training set: 4956
+- Size of validation/testing set: 2124
+
+|  Label  |   Size  |
+|---------|---------|
+| Neutral |   2001  |
+|   Joy   |   1275  |
+|  Anger  |   1130  |
+|   Sad   |   1003  |
+|  Fear   |   911   |
+|  Love   |   760   |
+
+
+### Composition of Datasets (Tweet & Label)
+![image](https://github.com/user-attachments/assets/94822b2f-c1a6-4698-9f76-f104c6bc8ff9)
+
+### Heatmap of Datasets (Tweet & Label)
+![image](https://github.com/user-attachments/assets/2f779bf4-6a7a-48d7-adde-708c47c8c021)
 
 ## Traditional Machine Learning Classifiers
 
@@ -77,8 +99,8 @@ Four traditional machine learning classifiers were evaluated for their performan
 
 ## Summary
 
+The confusion matrices provide detailed insights into the classification results, showing the distribution of true positives, false positives, true negatives, and false negatives for each classifier.
 - The Linear Support Vector classifier outperformed the other classifiers with the highest accuracy and F1 score of 70.95%.
 - The Random Forest classifier also showed strong performance with an accuracy of 68.13%.
 - The Logistic Regression classifier achieved a moderate accuracy of 65.87%.
 - The Naive Bayes classifier had the lowest performance with an accuracy of 43.79%.
-#### The confusion matrices provide detailed insights into the classification results, showing the distribution of true positives, false positives, true negatives, and false negatives for each classifier.
