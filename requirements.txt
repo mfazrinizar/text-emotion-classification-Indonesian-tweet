@@ -2,5 +2,5 @@ pandas
 numpy
 nltk
 matplotlib
-sklearn
+scikit-learn
 pickle
