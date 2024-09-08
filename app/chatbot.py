@@ -6,7 +6,7 @@ from nltk.stem import PorterStemmer
 from sklearn.pipeline import Pipeline
 import re
 
-nltk.download('punkt')
+nltk.download('punkt_tab')
 
 # Define the preprocess_and_tokenize function used during training
 def preprocess_and_tokenize(data):
