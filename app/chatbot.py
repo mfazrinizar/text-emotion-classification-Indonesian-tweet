@@ -1,9 +1,12 @@
 import streamlit as st
 import pickle
+import nltk
 from nltk import word_tokenize
 from nltk.stem import PorterStemmer
 from sklearn.pipeline import Pipeline
 import re
+
+nltk.download('punkt')
 
 # Define the preprocess_and_tokenize function used during training
 def preprocess_and_tokenize(data):
